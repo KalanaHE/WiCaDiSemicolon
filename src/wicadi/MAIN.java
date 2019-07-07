@@ -6,6 +6,13 @@
 package wicadi;
 
 import java.awt.Color;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  *
@@ -13,7 +20,10 @@ import java.awt.Color;
  */
 import java.util.LinkedList;
 import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.*;
+import javax.swing.filechooser.FileSystemView;
 
 public class MAIN extends javax.swing.JFrame {
 
@@ -120,6 +130,8 @@ public class MAIN extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         history = new javax.swing.JTextArea();
         clearhistory = new javax.swing.JButton();
+        saveformula = new javax.swing.JButton();
+        loadformula = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("WiCaDi");
@@ -691,6 +703,24 @@ public class MAIN extends javax.swing.JFrame {
         getContentPane().add(clearhistory);
         clearhistory.setBounds(530, 530, 270, 32);
 
+        saveformula.setText("Save Formula");
+        saveformula.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveformulaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(saveformula);
+        saveformula.setBounds(320, 530, 120, 32);
+
+        loadformula.setText("Load Formula");
+        loadformula.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loadformulaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(loadformula);
+        loadformula.setBounds(320, 570, 120, 32);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
     private static double round(double d, int k) {
@@ -1148,9 +1178,51 @@ public class MAIN extends javax.swing.JFrame {
         history.setText(null);
     }//GEN-LAST:event_clearhistoryActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void saveformulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveformulaActionPerformed
+        String saveformula = jTextField1.getText();
+        System.out.println(saveformula);
+        
+        String fname = (JOptionPane.showInputDialog("Enter Your Formula Name"));
+        
+        JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+        jfc.setDialogTitle("Choose a directory to save your file: ");
+        jfc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        int returnValue = jfc.showSaveDialog(null);
+        if (returnValue == JFileChooser.APPROVE_OPTION) {
+            if (jfc.getSelectedFile().isDirectory()) {
+                System.out.println("You selected the directory: " + jfc.getSelectedFile());
+            }
+        }
+        try{
+            FileWriter fw=new FileWriter(jfc.getSelectedFile()+"\\"+fname+".txt");
+            fw.write(saveformula);
+            fw.close();
+        }catch(Exception e){System.out.println(e);}
+        System.out.println("Success...");
+    }//GEN-LAST:event_saveformulaActionPerformed
+
+    private void loadformulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadformulaActionPerformed
+        JFileChooser fc = new JFileChooser();
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       
+            int returnVal = fc.showOpenDialog(frame);
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
+              File file = fc.getSelectedFile();
+              try {
+                BufferedReader input = new BufferedReader(new InputStreamReader(
+                    new FileInputStream(file)));
+                jTextField1.read(input, "READING FILE");
+              } catch (Exception e) {
+                e.printStackTrace();
+              }
+            } else {
+              System.out.println("Operation is CANCELLED");
+            }
+     
+    }//GEN-LAST:event_loadformulaActionPerformed
+
+  
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
@@ -1196,6 +1268,7 @@ public class MAIN extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField2;
     private javax.swing.JButton lnbutton;
     private javax.swing.JButton loadbutton;
+    private javax.swing.JButton loadformula;
     private javax.swing.JButton logbutton;
     private javax.swing.JButton minusbutton;
     private javax.swing.JButton mulltiplybutton;
@@ -1216,6 +1289,7 @@ public class MAIN extends javax.swing.JFrame {
     private javax.swing.JButton rembutton;
     private javax.swing.JButton roots;
     private javax.swing.JButton savebutton;
+    private javax.swing.JButton saveformula;
     private javax.swing.JButton sigbutton;
     private javax.swing.JButton sinbutton;
     private javax.swing.JButton sqrtbutton;
