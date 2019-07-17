@@ -132,6 +132,7 @@ public class MAIN extends javax.swing.JFrame {
         clearhistory = new javax.swing.JButton();
         saveformula = new javax.swing.JButton();
         loadformula = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("WiCaDi");
@@ -285,6 +286,14 @@ public class MAIN extends javax.swing.JFrame {
         dividebutton.setBounds(190, 320, 50, 32);
 
         answerbutton.setText("ANS");
+        answerbutton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                answerbuttonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                answerbuttonMouseExited(evt);
+            }
+        });
         answerbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 answerbuttonActionPerformed(evt);
@@ -403,6 +412,14 @@ public class MAIN extends javax.swing.JFrame {
 
         clearbutton.setText("CLR");
         clearbutton.setToolTipText("Clear Screen");
+        clearbutton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                clearbuttonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                clearbuttonMouseExited(evt);
+            }
+        });
         clearbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 clearbuttonActionPerformed(evt);
@@ -499,7 +516,7 @@ public class MAIN extends javax.swing.JFrame {
             }
         });
         getContentPane().add(valueofx);
-        valueofx.setBounds(320, 490, 120, 30);
+        valueofx.setBounds(320, 530, 120, 30);
 
         jButton39.setText("Abs");
         jButton39.setToolTipText("Absolute value");
@@ -527,7 +544,7 @@ public class MAIN extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(660, 0, 160, 40);
+        jLabel1.setBounds(660, 10, 160, 40);
 
         logbutton.setText("Log");
         logbutton.setToolTipText("log at base 10");
@@ -546,7 +563,7 @@ public class MAIN extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton56);
-        jButton56.setBounds(560, 30, 100, 20);
+        jButton56.setBounds(560, 40, 100, 20);
 
         stepbutton.setText("Step");
         stepbutton.setToolTipText("Set no of digit after decimal point");
@@ -576,7 +593,7 @@ public class MAIN extends javax.swing.JFrame {
             }
         });
         getContentPane().add(roots);
-        roots.setBounds(320, 370, 160, 32);
+        roots.setBounds(320, 370, 170, 32);
 
         differentiation.setText("DIFFERENTIATION");
         differentiation.setToolTipText("Aprox Differentiation");
@@ -586,17 +603,22 @@ public class MAIN extends javax.swing.JFrame {
             }
         });
         getContentPane().add(differentiation);
-        differentiation.setBounds(320, 410, 160, 32);
+        differentiation.setBounds(320, 410, 170, 32);
 
-        intergration.setText("INTEGRATION");
+        intergration.setText("DEFINITE INTEGRATION");
         intergration.setToolTipText("Aprox Integration");
+        intergration.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                intergrationMouseEntered(evt);
+            }
+        });
         intergration.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 intergrationActionPerformed(evt);
             }
         });
         getContentPane().add(intergration);
-        intergration.setBounds(320, 450, 160, 32);
+        intergration.setBounds(320, 450, 170, 32);
 
         graphbutton.setText("GRAPH");
         graphbutton.setToolTipText("Make Graf of function");
@@ -671,20 +693,20 @@ public class MAIN extends javax.swing.JFrame {
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel3.setText("History");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(530, 70, 120, 22);
+        jLabel3.setBounds(530, 80, 120, 22);
         getContentPane().add(jSeparator1);
         jSeparator1.setBounds(370, 60, 0, 2);
         getContentPane().add(jSeparator3);
-        jSeparator3.setBounds(10, 60, 800, 10);
+        jSeparator3.setBounds(10, 70, 790, 10);
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
         getContentPane().add(jSeparator2);
-        jSeparator2.setBounds(510, 62, 10, 490);
+        jSeparator2.setBounds(510, 70, 10, 490);
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("By SEMICOLON;");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(690, 40, 110, 16);
+        jLabel2.setBounds(690, 50, 110, 16);
 
         history.setColumns(20);
         history.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -692,7 +714,7 @@ public class MAIN extends javax.swing.JFrame {
         jScrollPane1.setViewportView(history);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(530, 110, 270, 400);
+        jScrollPane1.setBounds(530, 120, 270, 400);
 
         clearhistory.setText("Clear History");
         clearhistory.addActionListener(new java.awt.event.ActionListener() {
@@ -701,7 +723,7 @@ public class MAIN extends javax.swing.JFrame {
             }
         });
         getContentPane().add(clearhistory);
-        clearhistory.setBounds(530, 530, 270, 32);
+        clearhistory.setBounds(530, 540, 270, 32);
 
         saveformula.setText("Save Formula");
         saveformula.addActionListener(new java.awt.event.ActionListener() {
@@ -710,7 +732,7 @@ public class MAIN extends javax.swing.JFrame {
             }
         });
         getContentPane().add(saveformula);
-        saveformula.setBounds(320, 530, 120, 32);
+        saveformula.setBounds(10, 570, 120, 32);
 
         loadformula.setText("Load Formula");
         loadformula.addActionListener(new java.awt.event.ActionListener() {
@@ -719,7 +741,16 @@ public class MAIN extends javax.swing.JFrame {
             }
         });
         getContentPane().add(loadformula);
-        loadformula.setBounds(320, 570, 120, 32);
+        loadformula.setBounds(140, 570, 120, 32);
+
+        jButton1.setText("INDEFINITE INTEGRATION");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(320, 490, 169, 32);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1222,6 +1253,30 @@ public class MAIN extends javax.swing.JFrame {
      
     }//GEN-LAST:event_loadformulaActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        jTextField2.setText(jTextField1.getText());
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void intergrationMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_intergrationMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_intergrationMouseEntered
+
+    private void answerbuttonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_answerbuttonMouseEntered
+         answerbutton.setBackground(Color.GREEN);
+    }//GEN-LAST:event_answerbuttonMouseEntered
+
+    private void answerbuttonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_answerbuttonMouseExited
+        answerbutton.setBackground(UIManager.getColor("control"));
+    }//GEN-LAST:event_answerbuttonMouseExited
+
+    private void clearbuttonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearbuttonMouseEntered
+        clearbutton.setBackground(Color.RED);
+    }//GEN-LAST:event_clearbuttonMouseEntered
+
+    private void clearbuttonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_clearbuttonMouseExited
+        clearbutton.setBackground(UIManager.getColor("control"));
+    }//GEN-LAST:event_clearbuttonMouseExited
+
   
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -1252,6 +1307,7 @@ public class MAIN extends javax.swing.JFrame {
     private javax.swing.JButton graphbutton;
     private javax.swing.JTextArea history;
     private javax.swing.JButton intergration;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton39;
     private javax.swing.JButton jButton48;
