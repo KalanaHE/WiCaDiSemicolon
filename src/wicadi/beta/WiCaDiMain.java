@@ -19,6 +19,7 @@ import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.filechooser.FileSystemView;
 
 /**
@@ -158,7 +159,7 @@ public class WiCaDiMain extends javax.swing.JFrame {
         setResizable(false);
 
         display1.setBackground(new java.awt.Color(0, 153, 0));
-        display1.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        display1.setFont(new java.awt.Font("Ubuntu", 1, 36)); // NOI18N
         display1.setForeground(new java.awt.Color(255, 255, 255));
         display1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
@@ -491,7 +492,7 @@ public class WiCaDiMain extends javax.swing.JFrame {
         pi.setBackground(new java.awt.Color(51, 0, 51));
         pi.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
         pi.setForeground(new java.awt.Color(255, 255, 255));
-        pi.setText("pi");
+        pi.setText("π");
         pi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 piActionPerformed(evt);
@@ -590,7 +591,7 @@ public class WiCaDiMain extends javax.swing.JFrame {
 
         graph.setBackground(new java.awt.Color(255, 102, 153));
         graph.setForeground(new java.awt.Color(255, 255, 255));
-        graph.setText("<html>LINEAR<br>\nGRAPH</html>");
+        graph.setText("<html><center>BASIC<br> GRAPH</center></html>");
         graph.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 graphActionPerformed(evt);
@@ -680,11 +681,11 @@ public class WiCaDiMain extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
                     .addComponent(clearhistory, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addGap(14, 14, 14))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -692,10 +693,10 @@ public class WiCaDiMain extends javax.swing.JFrame {
                 .addGap(15, 15, 15)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1)
                 .addGap(18, 18, 18)
                 .addComponent(clearhistory)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(48, 48, 48))
         );
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 102));
@@ -745,7 +746,7 @@ public class WiCaDiMain extends javax.swing.JFrame {
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        agraph.setText("<html>ADVANCED<br>GRAPHING\n\n\n</html>");
+        agraph.setText("<html><center>ADVANCED<br>GRAPHING</center>\n\n\n</html>");
         agraph.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 agraphActionPerformed(evt);
@@ -877,9 +878,9 @@ public class WiCaDiMain extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(display1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(display1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -1142,7 +1143,7 @@ public class WiCaDiMain extends javax.swing.JFrame {
 
     private void clrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clrActionPerformed
         s.delete(0, s.length());
-        display1.setText("");
+        display1.setText("0");
         display2.setText("");
     }//GEN-LAST:event_clrActionPerformed
 
@@ -1155,7 +1156,10 @@ public class WiCaDiMain extends javax.swing.JFrame {
     }//GEN-LAST:event_stepActionPerformed
 
     private void loadformulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadformulaActionPerformed
-        JFileChooser fc = new JFileChooser();
+        String userhome = System.getProperty("user.home");
+        JFileChooser fc = new JFileChooser(userhome +"\\Desktop");
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("TEXT FILES", "txt", "text");
+        fc.setFileFilter(filter);
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

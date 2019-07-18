@@ -174,9 +174,9 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                  <Component id="display1" alignment="1" min="-2" pref="51" max="-2" attributes="0"/>
+                  <Component id="display1" min="-2" pref="72" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -346,7 +346,7 @@
           <Color blue="0" green="99" red="0" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Ubuntu" size="24" style="1"/>
+          <Font name="Ubuntu" size="36" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -917,7 +917,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="pi"/>
+        <Property name="text" type="java.lang.String" value="&#x3c0;"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="piActionPerformed"/>
@@ -1098,7 +1098,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="&lt;html&gt;LINEAR&lt;br&gt;&#xa;GRAPH&lt;/html&gt;"/>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;center&gt;BASIC&lt;br&gt; GRAPH&lt;/center&gt;&lt;/html&gt;"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="graphActionPerformed"/>
@@ -1204,12 +1204,12 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel3" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                       <Component id="jScrollPane1" alignment="0" pref="298" max="32767" attributes="0"/>
                       <Component id="clearhistory" alignment="0" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="14" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1219,10 +1219,10 @@
                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" pref="349" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" max="32767" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="clearhistory" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1356,7 +1356,7 @@
     </Container>
     <Component class="javax.swing.JButton" name="agraph">
       <Properties>
-        <Property name="text" type="java.lang.String" value="&lt;html&gt;ADVANCED&lt;br&gt;GRAPHING&#xa;&#xa;&#xa;&lt;/html&gt;"/>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;center&gt;ADVANCED&lt;br&gt;GRAPHING&lt;/center&gt;&#xa;&#xa;&#xa;&lt;/html&gt;"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="agraphActionPerformed"/>
