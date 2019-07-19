@@ -37,6 +37,8 @@ public class WiCaDiBeta extends javax.swing.JFrame {
     grafer grf;
     private int xp = 5; //default decimal points
     Map<String, String> formulaMap = new HashMap<>();
+    
+    
 
     /**
      * Creates new form WiCaDiMain
@@ -59,7 +61,10 @@ public class WiCaDiBeta extends javax.swing.JFrame {
         
         
         initComponents();
+
     }
+    
+    //NEW
     
     private static double round(double d, int k) {
 
@@ -1552,10 +1557,15 @@ public class WiCaDiBeta extends javax.swing.JFrame {
     }//GEN-LAST:event_varzActionPerformed
    
     
+    //KEY LISTEN
+    
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        
+        
         
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
