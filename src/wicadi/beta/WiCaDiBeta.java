@@ -5,6 +5,8 @@
  */
 package wicadi.beta;
 
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -37,8 +39,6 @@ public class WiCaDiBeta extends javax.swing.JFrame {
     grafer grf;
     private int xp = 5; //default decimal points
     Map<String, String> formulaMap = new HashMap<>();
-    
-    
 
     /**
      * Creates new form WiCaDiMain
@@ -58,13 +58,9 @@ public class WiCaDiBeta extends javax.swing.JFrame {
         gw2.getContentPane().add(pp);
         grf = new grafer();
         gw.setContentPane(grf);
-        
-        
-        initComponents();
 
+        initComponents();
     }
-    
-    //NEW
     
     private static double round(double d, int k) {
 
@@ -1154,18 +1150,11 @@ public class WiCaDiBeta extends javax.swing.JFrame {
         String ss = display1.getText();
         try {
             sc.con(ss);
-            history.setText(history.getText() + "\n" + "GRAPH " + " (Y =" + display1.getText() + ")");
-            
-            //CSV
-            double x=-10;
-            double form = Double.parseDouble(display1.getText());
-            
-            
+            history.setText(history.getText() +"\n"+"GRAPH " +" (Y ="+ display1.getText()+")");
         } catch (Exception exception) {
             this.display2.setText("SYNTEX ERROR");
             return;
         }
-        gw.setTitle("Graph = " + display1.getText());
         grafer.s = ss;
         gw.repaint();
         gw.setVisible(true);
@@ -1261,7 +1250,6 @@ public class WiCaDiBeta extends javax.swing.JFrame {
             display2.setText("" + d + " ");
 
             history.setText(history.getText() + "\n" + display1.getText() + " = " + display2.getText());
-            System.out.println(requestFocusInWindow());
 
         } catch (Exception dd) {
             display2.setText("SYNTEX ERROR");
@@ -1555,18 +1543,13 @@ public class WiCaDiBeta extends javax.swing.JFrame {
         s = s.append("z");
         display1.setText(s.toString());
     }//GEN-LAST:event_varzActionPerformed
+
    
-    
-    //KEY LISTEN
-    
     
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        
-        
-        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -1597,8 +1580,6 @@ public class WiCaDiBeta extends javax.swing.JFrame {
                 new WiCaDiBeta().setVisible(true);
             }
         });
-        
-        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -1672,7 +1653,6 @@ public class WiCaDiBeta extends javax.swing.JFrame {
     private javax.swing.JButton vary;
     private javax.swing.JButton varz;
     // End of variables declaration//GEN-END:variables
-
 
 
 
