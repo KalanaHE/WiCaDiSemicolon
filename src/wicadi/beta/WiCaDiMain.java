@@ -36,7 +36,7 @@ public class WiCaDiMain extends javax.swing.JFrame {
     JFrame gw2;
     JTextArea ta;
     grafer grf;
-    private int xp = 5;
+    private int xp = 5; //default decimal points
     Map<String, String> formulaMap = new HashMap<>();
 
     /**
@@ -158,7 +158,7 @@ public class WiCaDiMain extends javax.swing.JFrame {
         setBackground(new java.awt.Color(102, 102, 102));
         setResizable(false);
 
-        display1.setBackground(new java.awt.Color(0, 153, 0));
+        display1.setBackground(new java.awt.Color(102, 204, 0));
         display1.setFont(new java.awt.Font("Ubuntu", 1, 36)); // NOI18N
         display1.setForeground(new java.awt.Color(255, 255, 255));
         display1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
@@ -168,7 +168,9 @@ public class WiCaDiMain extends javax.swing.JFrame {
         display2.setForeground(new java.awt.Color(255, 255, 255));
         display2.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
+        save.setBackground(new java.awt.Color(51, 153, 255));
         save.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        save.setForeground(new java.awt.Color(255, 255, 255));
         save.setText("SAVE");
         save.setToolTipText("Save to clipboard");
         save.addActionListener(new java.awt.event.ActionListener() {
@@ -177,7 +179,9 @@ public class WiCaDiMain extends javax.swing.JFrame {
             }
         });
 
+        load.setBackground(new java.awt.Color(51, 153, 255));
         load.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        load.setForeground(new java.awt.Color(255, 255, 255));
         load.setText("LOAD");
         load.setToolTipText("Load from clipboard");
         load.addActionListener(new java.awt.event.ActionListener() {
@@ -589,7 +593,8 @@ public class WiCaDiMain extends javax.swing.JFrame {
             }
         });
 
-        graph.setBackground(new java.awt.Color(255, 102, 153));
+        graph.setBackground(new java.awt.Color(153, 153, 0));
+        graph.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         graph.setForeground(new java.awt.Color(255, 255, 255));
         graph.setText("<html><center>BASIC<br> GRAPH</center></html>");
         graph.addActionListener(new java.awt.event.ActionListener() {
@@ -598,7 +603,8 @@ public class WiCaDiMain extends javax.swing.JFrame {
             }
         });
 
-        pixelperinch.setBackground(new java.awt.Color(255, 102, 153));
+        pixelperinch.setBackground(new java.awt.Color(153, 153, 0));
+        pixelperinch.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         pixelperinch.setForeground(new java.awt.Color(255, 255, 255));
         pixelperinch.setText("PIX");
         pixelperinch.setToolTipText("Click to define how many pixels per unit");
@@ -608,7 +614,8 @@ public class WiCaDiMain extends javax.swing.JFrame {
             }
         });
 
-        center.setBackground(new java.awt.Color(255, 102, 153));
+        center.setBackground(new java.awt.Color(153, 153, 0));
+        center.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         center.setForeground(new java.awt.Color(255, 255, 255));
         center.setText("CENTER");
         center.addActionListener(new java.awt.event.ActionListener() {
@@ -617,7 +624,8 @@ public class WiCaDiMain extends javax.swing.JFrame {
             }
         });
 
-        gridstatus.setBackground(new java.awt.Color(255, 102, 153));
+        gridstatus.setBackground(new java.awt.Color(153, 153, 0));
+        gridstatus.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         gridstatus.setForeground(new java.awt.Color(255, 255, 255));
         gridstatus.setText("GRID");
         gridstatus.setToolTipText("Check to show grid under the graph");
@@ -747,6 +755,7 @@ public class WiCaDiMain extends javax.swing.JFrame {
         );
 
         agraph.setText("<html><center>ADVANCED<br>GRAPHING</center>\n\n\n</html>");
+        agraph.setToolTipText("Quadratic, Rational, Exponential, Logarithemic, Sinusodial");
         agraph.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 agraphActionPerformed(evt);
@@ -1150,6 +1159,7 @@ public class WiCaDiMain extends javax.swing.JFrame {
     private void stepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stepActionPerformed
         try {
             xp = Integer.parseInt(JOptionPane.showInputDialog("Enter no of Digit after decimal point\n(Active from next operation)"));
+            answer.doClick();
         } catch (Exception exception) {
             return;
         }
@@ -1379,7 +1389,7 @@ public class WiCaDiMain extends javax.swing.JFrame {
 
     private void valueofxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valueofxActionPerformed
         try {
-            zx = Double.parseDouble(JOptionPane.showInputDialog("Enter X"));
+            zx = Double.parseDouble(JOptionPane.showInputDialog(null,"Enter X","Input value of X",2));
         } catch (Exception exception) {
             return;
         }

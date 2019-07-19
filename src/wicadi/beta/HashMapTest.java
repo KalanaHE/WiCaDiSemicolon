@@ -12,7 +12,7 @@ package wicadi.beta;
 
 import java.util.*;
 
-public class HashMapDemo {
+public class HashMapTest {
    public static void main(String args[]) {
       
       // create hash map
