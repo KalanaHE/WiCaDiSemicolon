@@ -76,14 +76,7 @@ public class GraphCalc extends JPanel implements ActionListener{
 	catch (IOException | InputMismatchException e)  {
             System.out.println("Required file or inputs not found");
 	}
-        //shows help dialog
-        
-//        JOptionPane.showMessageDialog(null, "To use this graphing calculator choose the parent "
-//                + "function you wish to graph in the following menu then enter your "
-//                + "desired transformations. The form of the function can be found in "
-//                + "the title of transformation input form. The dimensions for the "
-//                + "graph can be changed in the Graph Dimensions text file", "Help", 
-//                JOptionPane.INFORMATION_MESSAGE, null);
+ 
 
         //creates the list box dialogue to choose parent function
         JFrame frame = new JFrame();
