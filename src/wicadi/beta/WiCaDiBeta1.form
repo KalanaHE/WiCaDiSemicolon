@@ -23,12 +23,15 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Component id="jPanel1" alignment="0" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+          <Component id="jPanel1" alignment="0" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -36,7 +39,7 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="33" red="0" type="rgb"/>
+          <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
       </Properties>
 
@@ -48,133 +51,153 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
+                              <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                       <Component id="sin" linkSize="1" alignment="0" max="32767" attributes="0"/>
                                       <Component id="cos" linkSize="1" alignment="0" max="32767" attributes="0"/>
                                       <Component id="tan" linkSize="1" alignment="0" max="32767" attributes="0"/>
                                       <Component id="abs" linkSize="1" alignment="0" max="32767" attributes="0"/>
                                       <Component id="rem" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="openbracket" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="ars" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="arc" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="art" linkSize="1" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
-                                      <Component id="sig" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="closebracket" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="varx" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="pi" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="power" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="ln" linkSize="1" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
+                                      <Component id="varx" linkSize="1" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="openbracket" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="ars" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="arc" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="art" linkSize="1" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <Component id="sig" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="closebracket" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="pi" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="power" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="ln" linkSize="1" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
                                               <Component id="exp" linkSize="1" pref="57" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="sqrt" linkSize="1" max="32767" attributes="0"/>
                                               <Component id="answer" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="log" linkSize="1" alignment="0" min="-2" pref="57" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="INDEFINITEINTEGRATION" linkSize="3" alignment="0" min="-2" pref="228" max="-2" attributes="0"/>
                                               <Component id="DEFINITEINTEGRATION" linkSize="3" alignment="0" min="-2" pref="228" max="-2" attributes="0"/>
-                                              <Component id="DIFFERENTIATION" linkSize="3" alignment="0" min="-2" pref="228" max="-2" attributes="0"/>
-                                              <Component id="roots" linkSize="3" alignment="0" min="-2" pref="228" max="-2" attributes="0"/>
                                               <Component id="valueofx" linkSize="3" alignment="0" min="-2" pref="228" max="-2" attributes="0"/>
+                                              <Component id="DIFFERENTIATION" linkSize="3" min="-2" pref="228" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <Component id="log" linkSize="1" min="-2" pref="57" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="vary" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="varz" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="btn1" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="btn6" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="plus" alignment="0" max="32767" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jSeparator2" linkSize="15" alignment="0" min="-2" pref="495" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="btn1" linkSize="10" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                      <Component id="btn7" linkSize="10" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                      <Component id="btn4" linkSize="10" alignment="1" min="-2" pref="52" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="btn2" linkSize="10" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                      <Component id="btn8" linkSize="10" alignment="0" min="-2" pref="52" max="-2" attributes="0"/>
+                                                      <Component id="btn5" linkSize="10" min="-2" pref="52" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Component id="btn0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="btn3" linkSize="10" alignment="0" pref="58" max="32767" attributes="0"/>
+                                              <Component id="btn6" linkSize="10" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="btn9" linkSize="10" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="dot" linkSize="10" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="minus" linkSize="12" alignment="1" min="-2" pref="59" max="-2" attributes="0"/>
+                                              <Component id="plus" linkSize="12" alignment="1" min="-2" pref="59" max="-2" attributes="0"/>
+                                              <Component id="divide" linkSize="12" alignment="1" min="-2" pref="59" max="-2" attributes="0"/>
+                                              <Component id="multiply" linkSize="12" alignment="1" min="-2" pref="59" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="pixelperinch" linkSize="8" min="-2" pref="72" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="center" linkSize="8" min="-2" pref="92" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="graph" linkSize="8" min="-2" pref="92" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="agraph" linkSize="8" min="-2" pref="95" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                                  <Component id="gridstatus" min="-2" pref="81" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <Component id="jSeparator3" linkSize="15" alignment="1" min="-2" pref="483" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="btn2" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="btn7" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="minus" alignment="1" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="btn3" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="btn8" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="multiply" alignment="1" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="btn4" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="btn9" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="divide" alignment="1" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="btn5" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="btn0" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="dot" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="pixelperinch" max="32767" attributes="0"/>
-                                      <Component id="gridstatus" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="graph" max="32767" attributes="0"/>
-                                      <Component id="center" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jSeparator2" alignment="0" min="-2" pref="513" max="-2" attributes="0"/>
-                              <Component id="jSeparator3" alignment="0" min="-2" pref="519" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="103" alignment="1" groupAlignment="1" max="-2" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="save" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="load" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="save" max="32767" attributes="0"/>
+                                              <Component id="load" pref="84" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="del" min="-2" pref="68" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="step" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="clr" min="-2" pref="68" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="saveformula" pref="222" max="32767" attributes="0"/>
+                                              <Component id="loadformula" max="32767" attributes="0"/>
+                                          </Group>
                                       </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="del" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="clr" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="step" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jButton6" alignment="0" max="32767" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="saveformula" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="loadformula" alignment="0" pref="150" max="32767" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="agraph" min="-2" pref="139" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                      <Component id="display1" max="32767" attributes="0"/>
                                   </Group>
-                                  <Component id="display1" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="jSeparator1" alignment="1" max="32767" attributes="0"/>
                               </Group>
-                              <Component id="display2" alignment="1" min="-2" pref="201" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="display2" alignment="1" min="-2" pref="221" max="-2" attributes="0"/>
+                                      <Component id="jSeparator1" linkSize="15" alignment="1" min="-2" pref="495" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
+                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="jPanel3" max="32767" attributes="0"/>
                       <Component id="jPanel2" max="32767" attributes="0"/>
@@ -191,102 +214,90 @@
                   </Group>
                   <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
+                      <Group type="102" attributes="0">
                           <Component id="display2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" max="-2" attributes="0"/>
-                          <Component id="jSeparator1" pref="1" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jSeparator1" min="-2" pref="5" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="save" min="-2" pref="41" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="load" min="-2" pref="41" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="del" min="-2" pref="41" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="clr" min="-2" pref="41" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="load" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                                      <Component id="clr" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="step" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
                                       <Component id="loadformula" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
+                                      <Component id="del" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jButton6" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
-                                      <Component id="saveformula" alignment="3" min="-2" pref="41" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="saveformula" min="-2" pref="41" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="agraph" alignment="0" min="-2" pref="88" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="btn6" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="graph" linkSize="9" max="32767" attributes="0"/>
+                                      <Component id="agraph" linkSize="9" max="32767" attributes="0"/>
+                                  </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="plus" min="-2" pref="40" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="pixelperinch" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="graph" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="gridstatus" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
-                                      <Component id="center" alignment="3" min="-2" pref="57" max="-2" attributes="0"/>
+                                      <Component id="center" linkSize="9" alignment="3" min="-2" pref="57" max="-2" attributes="0"/>
+                                      <Component id="pixelperinch" linkSize="9" alignment="3" max="32767" attributes="0"/>
                                   </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="gridstatus" min="-2" pref="52" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="btn2" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                                              <Component id="btn1" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="btn9" linkSize="11" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="plus" linkSize="13" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="btn7" min="-2" pref="40" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="btn6" linkSize="11" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="btn5" linkSize="11" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="btn4" linkSize="11" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="minus" linkSize="13" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                          </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="minus" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                                              <Component id="multiply" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="divide" linkSize="13" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="btn1" linkSize="11" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="btn2" linkSize="11" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="btn3" linkSize="11" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="btn3" min="-2" pref="40" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="btn8" min="-2" pref="40" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="btn4" min="-2" pref="40" max="-2" attributes="0"/>
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="btn9" min="-2" pref="40" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="divide" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                                              <Component id="dot" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="btn7" linkSize="11" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <Component id="btn8" linkSize="11" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                                           </Group>
+                                          <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="btn5" min="-2" pref="40" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btn0" min="-2" pref="40" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="btn0" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <Component id="dot" linkSize="11" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <Component id="multiply" linkSize="13" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                          <Component id="jSeparator3" pref="1" max="32767" attributes="0"/>
-                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jSeparator3" min="-2" pref="19" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
+                              <Group type="102" attributes="0">
                                   <Component id="sin" linkSize="2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="cos" linkSize="2" min="-2" max="-2" attributes="0"/>
@@ -296,59 +307,63 @@
                                   <Component id="abs" linkSize="2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="rem" linkSize="2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="vary" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="varz" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="varx" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="sqrt" linkSize="2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="valueofx" linkSize="14" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="DIFFERENTIATION" linkSize="14" min="-2" pref="38" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="DEFINITEINTEGRATION" linkSize="14" min="-2" pref="40" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="INDEFINITEINTEGRATION" linkSize="14" min="-2" pref="38" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="closebracket" linkSize="2" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                  <Component id="pi" linkSize="2" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="openbracket" linkSize="2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="ars" linkSize="2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="arc" linkSize="2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="art" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="power" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ars" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="exp" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="log" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="sig" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="ln" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="closebracket" linkSize="2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="varx" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="exp" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="arc" linkSize="2" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="art" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="power" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="3" attributes="0">
+                                              <Component id="sig" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="ln" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="pi" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="log" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                          <Component id="answer" max="32767" attributes="0"/>
                                       </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="answer" min="-2" pref="70" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="sqrt" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="valueofx" linkSize="4" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="roots" linkSize="4" min="-2" pref="33" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="DIFFERENTIATION" linkSize="4" min="-2" pref="33" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="DEFINITEINTEGRATION" linkSize="4" min="-2" pref="33" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="INDEFINITEINTEGRATION" linkSize="4" min="-2" pref="33" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="62" max="32767" attributes="0"/>
+                          <EmptySpace pref="32" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jPanel2" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -364,9 +379,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="DIFFERENTIATION"/>
-            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="null"/>
-            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Differentiate a formula"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DIFFERENTIATIONActionPerformed"/>
@@ -384,9 +397,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="DEFINITE INTEGRATION"/>
-            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="null"/>
-            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Find the area under a curve"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DEFINITEINTEGRATIONActionPerformed"/>
@@ -404,9 +415,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="INDEFINITE INTEGRATION"/>
-            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="null"/>
-            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Find the indefinite integral of a formula"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="WiCaDiMain_INDEFINITEINTEGRATION"/>
@@ -420,10 +429,8 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="VALUE OF X"/>
-            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="null"/>
-            </Property>
+            <Property name="text" type="java.lang.String" value="EVALUATE FORMULA"/>
+            <Property name="toolTipText" type="java.lang.String" value="Evaluate a formula"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="valueofxActionPerformed"/>
@@ -437,10 +444,8 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="99" red="99" type="rgb"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;center&gt;BASIC&lt;br&gt; GRAPH&lt;/center&gt;&lt;/html&gt;"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;center&gt;BASIC&lt;br&gt; GRAPHING&lt;/center&gt;&lt;/html&gt;"/>
+            <Property name="toolTipText" type="java.lang.String" value="Graphing a single variable formula"/>
           </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
@@ -454,11 +459,8 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="99" red="99" type="rgb"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="PIX"/>
-            <Property name="toolTipText" type="java.lang.String" value="Click to define how many pixels per unit"/>
+            <Property name="toolTipText" type="java.lang.String" value="Click to define how many pixels per unit in a graph"/>
           </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
@@ -471,9 +473,6 @@
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="99" red="99" type="rgb"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="CENTER"/>
           </Properties>
@@ -493,7 +492,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="GRID"/>
-            <Property name="toolTipText" type="java.lang.String" value="Check to show grid under the graph"/>
+            <Property name="toolTipText" type="java.lang.String" value="Select to show graph in a grid"/>
           </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
@@ -505,7 +504,7 @@
         <Component class="javax.swing.JButton" name="loadformula">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="99" green="ff" red="ff" type="rgb"/>
+              <Color blue="1e" green="ce" red="ce" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="LOAD FORMULA FILE"/>
             <Property name="toolTipText" type="java.lang.String" value="Click to load formula from a file"/>
@@ -517,10 +516,10 @@
         <Component class="javax.swing.JButton" name="saveformula">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="99" green="ff" red="ff" type="rgb"/>
+              <Color blue="1e" green="ce" red="ce" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="SAVE FORMULA FILE"/>
-            <Property name="toolTipText" type="java.lang.String" value="Click to save formula to a file"/>
+            <Property name="toolTipText" type="java.lang.String" value="Click to save formula/graph to a file"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveformulaActionPerformed"/>
@@ -534,9 +533,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="1"/>
           </Properties>
           <Events>
@@ -546,7 +542,7 @@
         <Component class="javax.swing.JButton" name="answer">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="99" red="0" type="rgb"/>
+              <Color blue="9" green="87" red="9" type="rgb"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -565,9 +561,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="6"/>
           </Properties>
           <Events>
@@ -578,14 +571,8 @@
         </Component>
         <Component class="javax.swing.JButton" name="plus">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="99" green="ff" red="cc" type="rgb"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="+"/>
           </Properties>
@@ -603,9 +590,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="2"/>
           </Properties>
           <Events>
@@ -622,9 +606,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="7"/>
           </Properties>
           <Events>
@@ -634,7 +615,7 @@
         <Container class="javax.swing.JPanel" name="jPanel2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="66" green="66" red="66" type="rgb"/>
+              <Color blue="99" green="99" red="99" type="rgb"/>
             </Property>
           </Properties>
 
@@ -645,7 +626,7 @@
                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel3" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
-                          <Component id="jScrollPane1" alignment="0" pref="298" max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" alignment="0" pref="375" max="32767" attributes="0"/>
                           <Component id="clearhistory" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
@@ -700,7 +681,7 @@
             <Component class="javax.swing.JButton" name="clearhistory">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="ff" type="rgb"/>
+                  <Color blue="38" green="38" red="b5" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -715,14 +696,8 @@
         </Container>
         <Component class="javax.swing.JButton" name="minus">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="99" green="ff" red="cc" type="rgb"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="-"/>
           </Properties>
@@ -738,9 +713,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="9"/>
           </Properties>
           <Events>
@@ -749,14 +721,8 @@
         </Component>
         <Component class="javax.swing.JButton" name="divide">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="99" green="ff" red="cc" type="rgb"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="/"/>
           </Properties>
@@ -772,9 +738,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="3"/>
           </Properties>
           <Events>
@@ -789,9 +752,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="8"/>
           </Properties>
           <Events>
@@ -801,13 +761,10 @@
         <Component class="javax.swing.JTextField" name="display1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="cc" red="66" type="rgb"/>
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Ubuntu" size="36" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="4"/>
           </Properties>
@@ -815,7 +772,7 @@
         <Component class="javax.swing.JTextField" name="display2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="99" red="33" type="rgb"/>
+              <Color blue="cc" green="cc" red="cc" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
@@ -829,7 +786,7 @@
         <Component class="javax.swing.JButton" name="save">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="99" red="33" type="rgb"/>
+              <Color blue="b4" green="60" red="e" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="13" style="1"/>
@@ -847,7 +804,7 @@
         <Component class="javax.swing.JButton" name="load">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="99" red="33" type="rgb"/>
+              <Color blue="b4" green="60" red="e" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="13" style="1"/>
@@ -865,7 +822,7 @@
         <Component class="javax.swing.JButton" name="del">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="ff" type="rgb"/>
+              <Color blue="38" green="38" red="b5" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="13" style="1"/>
@@ -882,7 +839,7 @@
         <Component class="javax.swing.JButton" name="clr">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="99" red="ff" type="rgb"/>
+              <Color blue="19" green="7e" red="c2" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="13" style="1"/>
@@ -903,19 +860,11 @@
               <Font name="Dialog" size="13" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="STEP"/>
-            <Property name="toolTipText" type="java.lang.String" value="Round number to x points"/>
+            <Property name="toolTipText" type="java.lang.String" value="Round off number "/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="stepActionPerformed"/>
           </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="jButton6">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="13" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="TST"/>
-          </Properties>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel3">
           <Properties>
@@ -964,7 +913,7 @@
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Eras Medium ITC" size="36" style="3"/>
+                  <Font name="Calisto MT" size="36" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -999,14 +948,8 @@
         </Container>
         <Component class="javax.swing.JButton" name="multiply">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="99" green="ff" red="cc" type="rgb"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="*"/>
           </Properties>
@@ -1022,9 +965,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="4"/>
           </Properties>
           <Events>
@@ -1038,9 +978,6 @@
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
@@ -1056,9 +993,6 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="."/>
           </Properties>
           <Events>
@@ -1067,6 +1001,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="agraph">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="99" red="99" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;center&gt;ADVANCED&lt;br&gt;GRAPHING&lt;/center&gt;&#xa;&#xa;&#xa;&lt;/html&gt;"/>
             <Property name="toolTipText" type="java.lang.String" value="Quadratic, Rational, Exponential, Logarithemic, Sinusodial"/>
           </Properties>
@@ -1081,9 +1018,6 @@
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="5"/>
           </Properties>
@@ -1289,7 +1223,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="X"/>
+            <Property name="text" type="java.lang.String" value="x"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="varxActionPerformed"/>
@@ -1397,25 +1331,39 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="logActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="roots">
+        <Component class="javax.swing.JButton" name="vary">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="66" green="66" red="0" type="rgb"/>
+              <Color blue="33" green="0" red="33" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="13" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="ROOTS"/>
-            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="null"/>
-            </Property>
+            <Property name="text" type="java.lang.String" value="y"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rootsActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="varyActionPerformed"/>
           </Events>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="WiCaDiMain_roots"/>
-          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="varz">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="33" green="0" red="33" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="13" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Z"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="varzActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
