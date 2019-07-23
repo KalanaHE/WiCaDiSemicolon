@@ -25,7 +25,7 @@ import javax.swing.filechooser.FileSystemView;
  *
  * @author Kalana Hettiarachchi
  */
-public class WiCaDiBeta1 extends javax.swing.JFrame {
+public class WiCaDiBeta extends javax.swing.JFrame {
 
     StringBuffer s;
     Random r;
@@ -42,7 +42,7 @@ public class WiCaDiBeta1 extends javax.swing.JFrame {
     /**
      * Creates new form WiCaDiMain
      */
-    public WiCaDiBeta1() {
+    public WiCaDiBeta() {
         sc = new sc4();
         r = new Random();
         s = new StringBuffer();
@@ -1467,20 +1467,20 @@ public class WiCaDiBeta1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(WiCaDiBeta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WiCaDiBeta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(WiCaDiBeta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WiCaDiBeta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(WiCaDiBeta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WiCaDiBeta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(WiCaDiBeta1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WiCaDiBeta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new WiCaDiBeta1().setVisible(true);
+                new WiCaDiBeta().setVisible(true);
             }
         });
     }
