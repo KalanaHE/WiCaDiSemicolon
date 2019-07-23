@@ -6,108 +6,13 @@
 package wicadi.beta;
 
 import java.util.StringTokenizer;
-import javax.swing.JOptionPane;
 
 /**
  *
  * @author Kalana Hettiarachchi
  */
-public class testIntergration {
-    
-    
-    public static void main(String[] args) {
-        double n1 = 0, n2 = 0, l = 0, y = 0;
-        double h = 0, j = 0;
-        double d = 0;
-        String ss = "x^2-2"; //The formula need to intergrate
-        int xp = 5;
-        
-        
-        
-        try {
-            n1 = Double.parseDouble(JOptionPane.showInputDialog("Enter Starting limit"));
-            n2 = Double.parseDouble(JOptionPane.showInputDialog("Enter Ending limit"));
-
-        } catch (Exception exception) {
-            return;
-        }
-
-        y = 1000 * (n2 - n1);
-        h = (double) (n2 - n1) / y;
-        j = n1;
-
-        while (l < y) {
-            l++;
-            j = j + h;
-            d = d + (con(ss, j) * h);
-        }
-
-        System.out.println("" + round(d, xp) + " ");
-       
-    }
-    
-     static double round(double d, int k) {
-
-        if (Double.isInfinite(d)) {
-            return d;
-        }
-
-        double h1 = d % 1;
-        double h2 = (Math.round(h1 * Math.pow(10, k))) / Math.pow(10, k);
-        double h3 = d - h1;
-        double d1 = h3 + h2;
-
-        return d1;
-
-    }
-     
-            public static double con(String s, double z) {
-
-        s = s.toLowerCase();
-        StringBuffer sb=new StringBuffer(s);
-        for (int i = 0; i < sb.length(); i++) {
-            if(sb.charAt(i)=='x'){
-                if(i>0 && sb.charAt(i-1)>='0'&& sb.charAt(i-1)<='9'){
-                    sb.insert(i, '*'); //identifying consecutive numbers and variables without operators as multiplications and putting * sign between them.
-                }
-                if(i<sb.length()-1 && sb.charAt(i+1)>='0' && sb.charAt(i+1)<='9'){
-                    sb.insert(i+1, '*'); 
-                }
-            }
-        }
-        
-        s=sb.toString();
-        s = s.replace("x", " x ");
-
-        s = s.replace("ars", " ars ");
-        s = s.replace("arc", " arc ");
-        s = s.replace("art", " art ");
-        s = s.replace("sin", " sin ");
-        s = s.replace("cos", " cos ");
-        s = s.replace("tan", " tan ");
-        
-        //new
-        s = s.replace("√", " √ ");
-
-        s = s.replace("ln", " ln ");
-        s = s.replace("abs", " abs ");
-        s = s.replace("ep", " ep ");
-        s = s.replace("log", " log ");
-        s = s.replace("sig", " sig ");
-        s = s.replace("rem", " rem ");
-        s = s.replace("+", " + ");
-        s = s.replace("-", " - ");
-        s = s.replace("*", " * ");
-        s = s.replace("/", " / ");
-        s = s.replace("^", " ^ ");
-        s = s.replace("(", " ( ");
-        s = s.replace(")", " ) ");
-
-        return rec(s, z);
-
-    }
-    
-        public static double rec(String s, double z) {
+public class wicadirec {
+        public double rec(String s, double z) {
 
         StringTokenizer tok = new StringTokenizer(s);
         String[] a = new String[tok.countTokens()];
@@ -332,5 +237,4 @@ public class testIntergration {
 
 
     }
-    
 }

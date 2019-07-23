@@ -380,7 +380,7 @@ public class WiCaDiBeta1 extends javax.swing.JFrame {
 
         display2.setBackground(new java.awt.Color(204, 204, 204));
         display2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        display2.setForeground(new java.awt.Color(255, 255, 255));
+        display2.setForeground(new java.awt.Color(0, 0, 0));
         display2.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         save.setBackground(new java.awt.Color(14, 96, 180));
