@@ -35,6 +35,7 @@ public class WiCaDiBeta1 extends javax.swing.JFrame {
     JFrame gw2;
     JTextArea ta;
     grafer grf;
+    roundnumber rn = new roundnumber();
     private int xp = 5; //default decimal points
     Map<String, String> formulaMap = new HashMap<>();
 
@@ -60,20 +61,6 @@ public class WiCaDiBeta1 extends javax.swing.JFrame {
         initComponents();
     }
     
-    private static double round(double d, int k) {
-
-        if (Double.isInfinite(d)) {
-            return d;
-        }
-
-        double h1 = d % 1;
-        double h2 = (Math.round(h1 * Math.pow(10, k))) / Math.pow(10, k);
-        double h3 = d - h1;
-        double d1 = h3 + h2;
-
-        return d1;
-
-    }
     
     
     /**
@@ -338,8 +325,8 @@ public class WiCaDiBeta1 extends javax.swing.JFrame {
                 .addGap(16, 16, 16)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 516, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(clearhistory)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -741,7 +728,7 @@ public class WiCaDiBeta1 extends javax.swing.JFrame {
         varz.setBackground(new java.awt.Color(51, 0, 51));
         varz.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
         varz.setForeground(new java.awt.Color(255, 255, 255));
-        varz.setText("Z");
+        varz.setText("z");
         varz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 varzActionPerformed(evt);
@@ -1050,7 +1037,7 @@ public class WiCaDiBeta1 extends javax.swing.JFrame {
         try {
             sc.con(ss);
         } catch (Exception exception) {
-            this.display2.setText("SYNTEX ERROR");
+            this.display2.setText("SYNTAX ERROR");
             return;
         }
         try {
@@ -1065,7 +1052,7 @@ public class WiCaDiBeta1 extends javax.swing.JFrame {
             h = 0.00001;
         }
         double d = (sc.con(this.display1.getText(), (n + h)) - sc.con(s.toString(), n)) / h;
-        display2.setText("" + round(d, xp) + " ");
+        display2.setText("" + rn.round(d, xp) + " ");
     }//GEN-LAST:event_DIFFERENTIATIONActionPerformed
 
     private void DEFINITEINTEGRATIONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DEFINITEINTEGRATIONActionPerformed
@@ -1076,7 +1063,7 @@ public class WiCaDiBeta1 extends javax.swing.JFrame {
         try {
             sc.con(ss);
         } catch (Exception exception) {
-            this.display2.setText("SYNTEX ERROR");
+            this.display2.setText("SYNTAX ERROR");
             return;
         }
         try {
@@ -1097,7 +1084,7 @@ public class WiCaDiBeta1 extends javax.swing.JFrame {
             d = d + (sc.con(ss, j) * h);
         }
 
-        display2.setText("" + round(d, xp) + " ");
+        display2.setText("" + rn.round(d, xp) + " ");
         history.setText(history.getText() + "\n" + display1.getText() + " = " + display2.getText() + "Integartion ( " + n1 + "-" + n2 + " )");
     }//GEN-LAST:event_DEFINITEINTEGRATIONActionPerformed
 
@@ -1117,7 +1104,9 @@ public class WiCaDiBeta1 extends javax.swing.JFrame {
             sc.con(ss);
             history.setText(history.getText() + "\n" + "GRAPH " + " (Y =" + display1.getText() + ")");
         } catch (Exception exception) {
-            this.display2.setText("SYNTEX ERROR");
+            this.display2.setText("SYNTAX ERROR");
+            
+            
             return;
         }
         gw.setTitle("Graph = " + display1.getText());
@@ -1212,13 +1201,13 @@ public class WiCaDiBeta1 extends javax.swing.JFrame {
     private void answerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answerActionPerformed
         try {
 
-            double d = round(sc.con(this.display1.getText(), zx), xp);
+            double d = rn.round(sc.con(this.display1.getText(), zx), xp);
             display2.setText("" + d + " ");
 
             history.setText(history.getText() + "\n" + display1.getText() + " = " + display2.getText());
 
         } catch (Exception dd) {
-            display2.setText("SYNTEX ERROR" + dd);
+            display2.setText("SYNTAX ERROR");
 
         }
     }//GEN-LAST:event_answerActionPerformed
