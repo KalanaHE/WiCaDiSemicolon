@@ -21,6 +21,7 @@ import java.util.logging.Logger;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.filechooser.FileSystemView;
+
 /**
  *
  * @author Kalana Hettiarachchi
@@ -60,9 +61,7 @@ public class WiCaDiBeta extends javax.swing.JFrame {
 
         initComponents();
     }
-    
-    
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -970,10 +969,7 @@ public class WiCaDiBeta extends javax.swing.JFrame {
                                 .addComponent(DEFINITEINTEGRATION, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(INDEFINITEINTEGRATION, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(closebracket)
-                                .addGap(46, 46, 46)
-                                .addComponent(pi))
+                            .addComponent(closebracket)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(openbracket)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -984,7 +980,9 @@ public class WiCaDiBeta extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(arc)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(arc)
+                                            .addComponent(pi))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                             .addComponent(art)
@@ -1031,29 +1029,366 @@ public class WiCaDiBeta extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void DIFFERENTIATIONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DIFFERENTIATIONActionPerformed
-        double n;
+    private void varzActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_varzActionPerformed
+        s = s.append("z");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_varzActionPerformed
+
+    private void varyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_varyActionPerformed
+        s = s.append("y");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_varyActionPerformed
+
+    private void logActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logActionPerformed
+        s = s.append("Log");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_logActionPerformed
+
+    private void expActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expActionPerformed
+        s = s.append("ep");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_expActionPerformed
+
+    private void sqrtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sqrtActionPerformed
+        s = s.append("√");
+        display1.setText("√");
+    }//GEN-LAST:event_sqrtActionPerformed
+
+    private void lnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lnActionPerformed
+        s = s.append("ln");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_lnActionPerformed
+
+    private void powerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_powerActionPerformed
+        s = s.append("^");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_powerActionPerformed
+
+    private void piActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_piActionPerformed
+        s = s.append("3.1415926535");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_piActionPerformed
+
+    private void varxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_varxActionPerformed
+        s = s.append("x");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_varxActionPerformed
+
+    private void closebracketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closebracketActionPerformed
+        s = s.append(")");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_closebracketActionPerformed
+
+    private void sigActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sigActionPerformed
+        s = s.append("Sig");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_sigActionPerformed
+
+    private void artActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_artActionPerformed
+        s = s.append("Art");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_artActionPerformed
+
+    private void arcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arcActionPerformed
+        s = s.append("Arc");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_arcActionPerformed
+
+    private void arsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arsActionPerformed
+        s = s.append("Ars");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_arsActionPerformed
+
+    private void openbracketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openbracketActionPerformed
+        s = s.append("(");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_openbracketActionPerformed
+
+    private void remActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_remActionPerformed
+        s = s.append("Rem");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_remActionPerformed
+
+    private void absActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_absActionPerformed
+        s = s.append("Abs");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_absActionPerformed
+
+    private void tanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tanActionPerformed
+        s = s.append("Tan");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_tanActionPerformed
+
+    private void cosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cosActionPerformed
+        s = s.append("Cos");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_cosActionPerformed
+
+    private void sinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sinActionPerformed
+        s = s.append("Sin");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_sinActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+        s = s.append("5");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_btn5ActionPerformed
+
+    private void agraphActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agraphActionPerformed
+        Graph gc = new Graph();
+        try {
+            gc.agraphrun();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }//GEN-LAST:event_agraphActionPerformed
+
+    private void dotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dotActionPerformed
+        s = s.append(".");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_dotActionPerformed
+
+    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
+        s = s.append("0");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_btn0ActionPerformed
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+        s = s.append("4");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_btn4ActionPerformed
+
+    private void multiplyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multiplyActionPerformed
+        s = s.append("*");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_multiplyActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        JOptionPane.showMessageDialog(this, "WiCaDi The Scientific Calculator \nProgrammed by © Semicolon;\n\n-Kalana Hettiarachchi\n-Kasun Yapa\n-Anuradha Senanayake\n-Rashmila Dharmage\n-Uvindu Dharmawardana\n\n", " WiCaDi v1", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void stepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stepActionPerformed
+        try {
+            xp = Integer.parseInt(JOptionPane.showInputDialog("Enter no. of digits after decimal point\n(Active from next operation)"));
+            answer.doClick();
+        } catch (Exception exception) {
+            return;
+        }
+    }//GEN-LAST:event_stepActionPerformed
+
+    private void clrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clrActionPerformed
+        s.delete(0, s.length());
+        display1.setText("0");
+        display2.setText("");
+    }//GEN-LAST:event_clrActionPerformed
+
+    private void delActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_delActionPerformed
+        if (s.length() > 0) {
+            s.deleteCharAt(s.length() - 1);
+            display1.setText(s.toString());
+        }
+    }//GEN-LAST:event_delActionPerformed
+
+    private void loadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadActionPerformed
+        String formulanam = JOptionPane.showInputDialog(null, "Enter the formula name", "Enter your formula name", JOptionPane.INFORMATION_MESSAGE);
+        if (formulaMap.get(formulanam) == null) {
+            JOptionPane.showMessageDialog(this, "There is no formula named " + formulanam + "!", "Error!", JOptionPane.ERROR_MESSAGE);
+        } else {
+            display1.setText(formulaMap.get(formulanam));
+        }
+        //System.out.println(formulaMap.get(formulanam));
+    }//GEN-LAST:event_loadActionPerformed
+
+    private void saveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveActionPerformed
+        String formulaname = JOptionPane.showInputDialog(null, "Enter formula name", "Enter your formula name", JOptionPane.INFORMATION_MESSAGE);
+        String form = display1.getText();
+
+        if (!formulaMap.containsKey(formulaname)) {
+            formulaMap.put(formulaname, form);
+            display1.setText(null);
+
+        } else {
+            int dialogButton = JOptionPane.YES_NO_OPTION;
+            int dialogResult = JOptionPane.showConfirmDialog(null, "Would you like to overwrite " + formulaname, "Warning", dialogButton);
+            if (dialogResult == JOptionPane.YES_OPTION) {
+                formulaMap.replace(formulaname, form);
+                display1.setText(null);
+            }
+        }
+        //System.out.println(formulaMap.get(formulaname));
+    }//GEN-LAST:event_saveActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+        s = s.append("8");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+        s = s.append("3");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_btn3ActionPerformed
+
+    private void divideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divideActionPerformed
+        s = s.append("/");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_divideActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+        s = s.append("9");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_btn9ActionPerformed
+
+    private void minusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusActionPerformed
+        s = s.append("-");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_minusActionPerformed
+
+    private void clearhistoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearhistoryActionPerformed
+        history.setText(null);
+    }//GEN-LAST:event_clearhistoryActionPerformed
+
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+        s = s.append("7");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        s = s.append("2");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void plusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusActionPerformed
+        s = s.append("+");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_plusActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+        s = s.append("6");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void answerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answerActionPerformed
+        try {
+
+            double d = rn.round(sc.con(this.display1.getText(), zx), xp);
+            display2.setText("" + d + " ");
+
+            history.setText(history.getText() + "\n" + display1.getText() + " = " + display2.getText());
+
+        } catch (Exception dd) {
+            display2.setText("SYNTAX ERROR");
+
+        }
+    }//GEN-LAST:event_answerActionPerformed
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        s = s.append("1");
+        display1.setText(s.toString());
+    }//GEN-LAST:event_btn1ActionPerformed
+
+    private void saveformulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveformulaActionPerformed
+        String saveformula = display1.getText();
+        System.out.println(saveformula);
+
+        String fname = (JOptionPane.showInputDialog("Enter Your Formula Name"));
+
+        JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+        jfc.setDialogTitle("Choose a directory to save your file: ");
+        jfc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        int returnValue = jfc.showSaveDialog(null);
+        if (returnValue == JFileChooser.APPROVE_OPTION) {
+            if (jfc.getSelectedFile().isDirectory()) {
+                System.out.println("You selected the directory: " + jfc.getSelectedFile());
+            }
+        }
+        try {
+            FileWriter fw = new FileWriter(jfc.getSelectedFile() + "\\" + fname + ".txt");
+                fw.write(saveformula);
+                fw.close();
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+            System.out.println("Success...");
+    }//GEN-LAST:event_saveformulaActionPerformed
+
+    private void loadformulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadformulaActionPerformed
+        String userhome = System.getProperty("user.home");
+        JFileChooser fc = new JFileChooser(userhome + "\\Desktop");
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("TEXT FILES", "txt", "text");
+        fc.setFileFilter(filter);
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        int returnVal = fc.showOpenDialog(frame);
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
+            File file = fc.getSelectedFile();
+            try {
+                BufferedReader input = new BufferedReader(new InputStreamReader(
+                    new FileInputStream(file)));
+            display1.read(input, "READING FILE");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        } else {
+            System.out.println("Operation is CANCELLED");
+        }
+    }//GEN-LAST:event_loadformulaActionPerformed
+
+    private void gridstatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridstatusActionPerformed
+        if (this.gridstatus.isSelected()) {
+            grafer.p = true;
+        } else {
+            grafer.p = false;
+        }
+    }//GEN-LAST:event_gridstatusActionPerformed
+
+    private void centerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_centerActionPerformed
+        try {
+            grafer.ofx = Double.parseDouble(JOptionPane.showInputDialog("Enter centre point x cordinate"));
+            grafer.ofy = Double.parseDouble(JOptionPane.showInputDialog("Enter centre point y cordinate"));
+
+        } catch (Exception exception) {
+            return;
+        }
+    }//GEN-LAST:event_centerActionPerformed
+
+    private void pixelperinchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pixelperinchActionPerformed
+        try {
+            int n = Integer.parseInt(JOptionPane.showInputDialog("Enter n - no of Pixel per unit\n 0<n<2000"));
+            if (!(n > 0 && n < 2000)) {
+                throw new Exception();
+            }
+            grafer.k = n;
+        } catch (Exception exception) {
+            return;
+        }
+    }//GEN-LAST:event_pixelperinchActionPerformed
+
+    private void graphActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_graphActionPerformed
         String ss = display1.getText();
         try {
             sc.con(ss);
+            history.setText(history.getText() + "\n" + "GRAPH " + " (Y =" + display1.getText() + ")");
         } catch (Exception exception) {
             this.display2.setText("SYNTAX ERROR");
+
             return;
         }
-        try {
-            n = Double.parseDouble(JOptionPane.showInputDialog("Enter Point"));
+        gw.setTitle("Graph = " + display1.getText());
+        grafer.s = ss;
+        gw.repaint();
+        gw.setVisible(true);
+    }//GEN-LAST:event_graphActionPerformed
 
+    private void valueofxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valueofxActionPerformed
+        try {
+            zx = Double.parseDouble(JOptionPane.showInputDialog(null, "Enter X", "Input value of X", 2));
         } catch (Exception exception) {
             return;
         }
 
-        double h = Math.abs(n * 0.00001);
-        if (h == 0) {
-            h = 0.00001;
-        }
-        double d = (sc.con(this.display1.getText(), (n + h)) - sc.con(s.toString(), n)) / h;
-        display2.setText("" + rn.round(d, xp) + " ");
-    }//GEN-LAST:event_DIFFERENTIATIONActionPerformed
+        this.answer.doClick();
+    }//GEN-LAST:event_valueofxActionPerformed
 
     private void DEFINITEINTEGRATIONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DEFINITEINTEGRATIONActionPerformed
         double n1 = 0, n2 = 0, l = 0, y = 0;
@@ -1088,367 +1423,29 @@ public class WiCaDiBeta extends javax.swing.JFrame {
         history.setText(history.getText() + "\n" + display1.getText() + " = " + display2.getText() + "Integartion ( " + n1 + "-" + n2 + " )");
     }//GEN-LAST:event_DEFINITEINTEGRATIONActionPerformed
 
-    private void valueofxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_valueofxActionPerformed
-        try {
-            zx = Double.parseDouble(JOptionPane.showInputDialog(null,"Enter X","Input value of X",2));
-        } catch (Exception exception) {
-            return;
-        }
-
-        this.answer.doClick();
-    }//GEN-LAST:event_valueofxActionPerformed
-
-    private void graphActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_graphActionPerformed
+    private void DIFFERENTIATIONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DIFFERENTIATIONActionPerformed
+        double n;
         String ss = display1.getText();
         try {
             sc.con(ss);
-            history.setText(history.getText() + "\n" + "GRAPH " + " (Y =" + display1.getText() + ")");
         } catch (Exception exception) {
             this.display2.setText("SYNTAX ERROR");
-            
-            
             return;
         }
-        gw.setTitle("Graph = " + display1.getText());
-        grafer.s = ss;
-        gw.repaint();
-        gw.setVisible(true);
-    }//GEN-LAST:event_graphActionPerformed
-
-    private void pixelperinchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pixelperinchActionPerformed
         try {
-            int n = Integer.parseInt(JOptionPane.showInputDialog("Enter n - no of Pixel per unit\n 0<n<2000"));
-            if (!(n > 0 && n < 2000)) {
-                throw new Exception();
-            }
-            grafer.k = n;
-        } catch (Exception exception) {
-            return;
-        }
-    }//GEN-LAST:event_pixelperinchActionPerformed
-
-    private void centerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_centerActionPerformed
-        try {
-            grafer.ofx = Double.parseDouble(JOptionPane.showInputDialog("Enter centre point x cordinate"));
-            grafer.ofy = Double.parseDouble(JOptionPane.showInputDialog("Enter centre point y cordinate"));
+            n = Double.parseDouble(JOptionPane.showInputDialog("Enter Point"));
 
         } catch (Exception exception) {
             return;
         }
-    }//GEN-LAST:event_centerActionPerformed
 
-    private void gridstatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridstatusActionPerformed
-        if (this.gridstatus.isSelected()) {
-            grafer.p = true;
-        } else {
-            grafer.p = false;
+        double h = Math.abs(n * 0.00001);
+        if (h == 0) {
+            h = 0.00001;
         }
-    }//GEN-LAST:event_gridstatusActionPerformed
-
-    private void loadformulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadformulaActionPerformed
-        String userhome = System.getProperty("user.home");
-        JFileChooser fc = new JFileChooser(userhome +"\\Desktop");
-        FileNameExtensionFilter filter = new FileNameExtensionFilter("TEXT FILES", "txt", "text");
-        fc.setFileFilter(filter);
-        JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        int returnVal = fc.showOpenDialog(frame);
-        if (returnVal == JFileChooser.APPROVE_OPTION) {
-            File file = fc.getSelectedFile();
-            try {
-                BufferedReader input = new BufferedReader(new InputStreamReader(
-                    new FileInputStream(file)));
-            display1.read(input, "READING FILE");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        } else {
-            System.out.println("Operation is CANCELLED");
-        }
-    }//GEN-LAST:event_loadformulaActionPerformed
-
-    private void saveformulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveformulaActionPerformed
-        String saveformula = display1.getText();
-        System.out.println(saveformula);
-
-        String fname = (JOptionPane.showInputDialog("Enter Your Formula Name"));
-
-        JFileChooser jfc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
-        jfc.setDialogTitle("Choose a directory to save your file: ");
-        jfc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-        int returnValue = jfc.showSaveDialog(null);
-        if (returnValue == JFileChooser.APPROVE_OPTION) {
-            if (jfc.getSelectedFile().isDirectory()) {
-                System.out.println("You selected the directory: " + jfc.getSelectedFile());
-            }
-        }
-        try {
-            FileWriter fw = new FileWriter(jfc.getSelectedFile() + "\\" + fname + ".txt");
-                fw.write(saveformula);
-                fw.close();
-            } catch (Exception e) {
-                System.out.println(e);
-            }
-            System.out.println("Success...");
-    }//GEN-LAST:event_saveformulaActionPerformed
-
-    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        s = s.append("1");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_btn1ActionPerformed
-
-    private void answerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_answerActionPerformed
-        try {
-
-            double d = rn.round(sc.con(this.display1.getText(), zx), xp);
-            display2.setText("" + d + " ");
-
-            history.setText(history.getText() + "\n" + display1.getText() + " = " + display2.getText());
-
-        } catch (Exception dd) {
-            display2.setText("SYNTAX ERROR");
-
-        }
-    }//GEN-LAST:event_answerActionPerformed
-
-    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
-        s = s.append("6");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_btn6ActionPerformed
-
-    private void plusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusActionPerformed
-        s = s.append("+");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_plusActionPerformed
-
-    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
-        s = s.append("2");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_btn2ActionPerformed
-
-    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
-        s = s.append("7");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_btn7ActionPerformed
-
-    private void clearhistoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearhistoryActionPerformed
-        history.setText(null);
-    }//GEN-LAST:event_clearhistoryActionPerformed
-
-    private void minusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusActionPerformed
-        s = s.append("-");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_minusActionPerformed
-
-    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
-        s = s.append("9");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_btn9ActionPerformed
-
-    private void divideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divideActionPerformed
-        s = s.append("/");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_divideActionPerformed
-
-    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
-        s = s.append("3");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_btn3ActionPerformed
-
-    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
-        s = s.append("8");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_btn8ActionPerformed
-
-    private void saveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveActionPerformed
-        String formulaname = JOptionPane.showInputDialog(null, "Enter formula name", "Enter your formula name", JOptionPane.INFORMATION_MESSAGE);
-        String form = display1.getText();
-
-        if (!formulaMap.containsKey(formulaname)) {
-            formulaMap.put(formulaname, form);
-            display1.setText(null);
-
-        } else {
-            int dialogButton = JOptionPane.YES_NO_OPTION;
-            int dialogResult = JOptionPane.showConfirmDialog(null, "Would you like to overwrite " + formulaname, "Warning", dialogButton);
-            if (dialogResult == JOptionPane.YES_OPTION) {
-                formulaMap.replace(formulaname, form);
-                display1.setText(null);
-            }
-        }
-        //System.out.println(formulaMap.get(formulaname));
-    }//GEN-LAST:event_saveActionPerformed
-
-    private void loadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loadActionPerformed
-        String formulanam = JOptionPane.showInputDialog(null, "Enter the formula name", "Enter your formula name", JOptionPane.INFORMATION_MESSAGE);
-        if (formulaMap.get(formulanam) == null) {
-            JOptionPane.showMessageDialog(this, "There is no formula named " + formulanam + "!", "Error!", JOptionPane.ERROR_MESSAGE);
-        } else {
-            display1.setText(formulaMap.get(formulanam));
-        }
-        //System.out.println(formulaMap.get(formulanam));
-    }//GEN-LAST:event_loadActionPerformed
-
-    private void delActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_delActionPerformed
-        if (s.length() > 0) {
-            s.deleteCharAt(s.length() - 1);
-            display1.setText(s.toString());
-        }
-    }//GEN-LAST:event_delActionPerformed
-
-    private void clrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clrActionPerformed
-        s.delete(0, s.length());
-        display1.setText("0");
-        display2.setText("");
-    }//GEN-LAST:event_clrActionPerformed
-
-    private void stepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stepActionPerformed
-        try {
-            xp = Integer.parseInt(JOptionPane.showInputDialog("Enter no. of digits after decimal point\n(Active from next operation)"));
-            answer.doClick();
-        } catch (Exception exception) {
-            return;
-        }
-    }//GEN-LAST:event_stepActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        JOptionPane.showMessageDialog(this, "WiCaDi The Scientific Calculator \nProgrammed by © Semicolon;\n\n-Kalana Hettiarachchi\n-Kasun Yapa\n-Anuradha Senanayake\n-Rashmila Dharmage\n-Uvindu Dharmawardana\n\n", " WiCaDi v1", JOptionPane.INFORMATION_MESSAGE);
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void multiplyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multiplyActionPerformed
-        s = s.append("*");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_multiplyActionPerformed
-
-    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-        s = s.append("4");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_btn4ActionPerformed
-
-    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
-        s = s.append("0");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_btn0ActionPerformed
-
-    private void dotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dotActionPerformed
-        s = s.append(".");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_dotActionPerformed
-
-    private void agraphActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agraphActionPerformed
-        Graph gc = new Graph();
-        try{
-            gc.agraphrun();
-        }catch(Exception e){
-            System.out.println(e);
-        }
-    }//GEN-LAST:event_agraphActionPerformed
-
-    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-        s = s.append("5");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_btn5ActionPerformed
-
-    private void sinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sinActionPerformed
-        s = s.append("Sin");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_sinActionPerformed
-
-    private void cosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cosActionPerformed
-        s = s.append("Sin");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_cosActionPerformed
-
-    private void tanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tanActionPerformed
-        s = s.append("Tan");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_tanActionPerformed
-
-    private void absActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_absActionPerformed
-        s = s.append("Abs");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_absActionPerformed
-
-    private void remActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_remActionPerformed
-        s = s.append("Rem");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_remActionPerformed
-
-    private void openbracketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openbracketActionPerformed
-        s = s.append("(");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_openbracketActionPerformed
-
-    private void arsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arsActionPerformed
-        s = s.append("Ars");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_arsActionPerformed
-
-    private void arcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arcActionPerformed
-        s = s.append("Arc");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_arcActionPerformed
-
-    private void artActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_artActionPerformed
-        s = s.append("Art");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_artActionPerformed
-
-    private void sigActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sigActionPerformed
-        s = s.append("Sig");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_sigActionPerformed
-
-    private void closebracketActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closebracketActionPerformed
-        s = s.append(")");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_closebracketActionPerformed
-
-    private void varxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_varxActionPerformed
-        s = s.append("x");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_varxActionPerformed
-
-    private void piActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_piActionPerformed
-        s = s.append("3.1415926535");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_piActionPerformed
-
-    private void powerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_powerActionPerformed
-        s = s.append("^");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_powerActionPerformed
-
-    private void lnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lnActionPerformed
-        s = s.append("ln");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_lnActionPerformed
-
-    private void sqrtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sqrtActionPerformed
-        s = s.append("√");
-        display1.setText("√");
-    }//GEN-LAST:event_sqrtActionPerformed
-
-    private void expActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expActionPerformed
-        s = s.append("ep");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_expActionPerformed
-
-    private void logActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logActionPerformed
-        s = s.append("Log");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_logActionPerformed
-
-    private void varyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_varyActionPerformed
-        s = s.append("y");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_varyActionPerformed
-
-    private void varzActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_varzActionPerformed
-        s = s.append("z");
-        display1.setText(s.toString());
-    }//GEN-LAST:event_varzActionPerformed
+        double d = (sc.con(this.display1.getText(), (n + h)) - sc.con(s.toString(), n)) / h;
+        display2.setText("" + rn.round(d, xp) + " ");
+    }//GEN-LAST:event_DIFFERENTIATIONActionPerformed
 
     /**
      * @param args the command line arguments

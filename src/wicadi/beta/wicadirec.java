@@ -12,7 +12,8 @@ import java.util.StringTokenizer;
  * @author Kalana Hettiarachchi
  */
 public class wicadirec {
-        public double rec(String s, double z) {
+
+    public double rec(String s, double z) {
 
         StringTokenizer tok = new StringTokenizer(s);
         String[] a = new String[tok.countTokens()];
@@ -117,7 +118,6 @@ public class wicadirec {
                     a[i] = "U";
                 }
 
-
             }
         }
         for (int i = 0; i < a.length; i++) {
@@ -201,7 +201,6 @@ public class wicadirec {
                 } else {
                     n1 = Double.parseDouble(a[i - 1]);
                 }
-
 
                 int temp = 0;
                 for (int k = i + 1; k < a.length; k++) {

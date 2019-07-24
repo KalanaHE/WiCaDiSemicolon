@@ -16,8 +16,8 @@ import javax.swing.JPanel;
 
 public class grafer extends JPanel {
 
-    private double x,  y,  c;
-    private int a,  b,  a1,  b1;
+    private double x, y, c;
+    private int a, b, a1, b1;
     public static String s;
     static public int k = 50;
     static public double ofx = 0;
@@ -45,7 +45,6 @@ public class grafer extends JPanel {
         x = (((double) a) / k) + ofx;
         y = (o.con(s, x)) - ofy;
         b = -(int) (y * k);
-
 
         super.paintComponent(g);
         this.setBackground(Color.white);

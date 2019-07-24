@@ -14,23 +14,23 @@ import java.util.StringTokenizer;
 public class sc4 {
 
     wicadirec wr = new wicadirec();
-    
+
     public double con(String s, double z) {
 
         s = s.toLowerCase();
-        StringBuffer sb=new StringBuffer(s);
+        StringBuffer sb = new StringBuffer(s);
         for (int i = 0; i < sb.length(); i++) {
-            if(sb.charAt(i)=='x'){
-                if(i>0 && sb.charAt(i-1)>='0'&& sb.charAt(i-1)<='9'){
+            if (sb.charAt(i) == 'x') {
+                if (i > 0 && sb.charAt(i - 1) >= '0' && sb.charAt(i - 1) <= '9') {
                     sb.insert(i, '*'); //identifying consecutive numbers and variables without operators as multiplications and putting * sign between them.
                 }
-                if(i<sb.length()-1 && sb.charAt(i+1)>='0' && sb.charAt(i+1)<='9'){
-                    sb.insert(i+1, '*'); 
+                if (i < sb.length() - 1 && sb.charAt(i + 1) >= '0' && sb.charAt(i + 1) <= '9') {
+                    sb.insert(i + 1, '*');
                 }
             }
         }
-        
-        s=sb.toString();
+
+        s = sb.toString();
         s = s.replace("x", " x ");
 
         s = s.replace("ars", " ars ");
@@ -39,7 +39,7 @@ public class sc4 {
         s = s.replace("sin", " sin ");
         s = s.replace("cos", " cos ");
         s = s.replace("tan", " tan ");
-        
+
         //new
         s = s.replace("√", " √ ");
 
@@ -70,5 +70,3 @@ public class sc4 {
         System.out.println("Ans " + m.con("1/0", 2));
     }
 }
-
-
