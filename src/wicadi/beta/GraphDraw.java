@@ -86,7 +86,6 @@ public class GraphDraw {
             }
         }
     }
-
     public void plotPoints(double a) {
         //graphs in exponential form
         for (int i = 0; i < width; i++) {
