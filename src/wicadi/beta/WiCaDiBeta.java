@@ -408,6 +408,7 @@ public class WiCaDiBeta extends javax.swing.JFrame {
         del.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
         del.setForeground(new java.awt.Color(255, 255, 255));
         del.setText("DEL");
+        del.setToolTipText("backspace");
         del.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 delActionPerformed(evt);
