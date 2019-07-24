@@ -107,7 +107,7 @@
                                               <Component id="divide" linkSize="12" alignment="1" min="-2" pref="59" max="-2" attributes="0"/>
                                               <Component id="multiply" linkSize="12" alignment="1" min="-2" pref="59" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="1" attributes="0">
                                                   <Component id="pixelperinch" linkSize="8" min="-2" pref="72" max="-2" attributes="0"/>
@@ -125,55 +125,53 @@
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jSeparator3" linkSize="19" max="32767" attributes="0"/>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                                  <Component id="sin" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="cos" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="tan" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="abs" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="rem" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="varx" linkSize="1" max="32767" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                                          <Component id="openbracket" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="ars" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="arc" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="art" linkSize="1" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
-                                                          <Component id="sig" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="closebracket" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="pi" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="power" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="ln" linkSize="1" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
-                                                          <Component id="exp" linkSize="1" pref="57" max="32767" attributes="0"/>
-                                                      </Group>
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="sqrt" linkSize="1" max="32767" attributes="0"/>
-                                                          <Component id="answer" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="log" linkSize="1" alignment="0" min="-2" pref="57" max="-2" attributes="0"/>
-                                                      </Group>
+                                      <Component id="jSeparator3" linkSize="19" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="sin" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="cos" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="tan" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="abs" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="rem" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="varx" linkSize="1" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                      <Component id="openbracket" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="ars" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="arc" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="art" linkSize="1" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
+                                                      <Component id="sig" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Component id="vary" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="varz" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="closebracket" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="pi" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="power" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="ln" linkSize="1" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
+                                                      <Component id="exp" linkSize="1" pref="57" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="sqrt" linkSize="1" max="32767" attributes="0"/>
+                                                      <Component id="answer" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="log" linkSize="1" alignment="0" min="-2" pref="57" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="DEFINITEINTEGRATION" linkSize="3" min="-2" pref="220" max="-2" attributes="0"/>
-                                                  <Component id="INDEFINITEINTEGRATION" linkSize="3" min="-2" pref="220" max="-2" attributes="0"/>
-                                                  <Component id="DIFFERENTIATION" linkSize="3" alignment="0" min="-2" pref="220" max="-2" attributes="0"/>
-                                                  <Component id="valueofx" linkSize="3" min="-2" pref="220" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="vary" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="varz" linkSize="1" min="-2" max="-2" attributes="0"/>
                                               </Group>
+                                          </Group>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="DEFINITEINTEGRATION" linkSize="3" min="-2" pref="220" max="-2" attributes="0"/>
+                                              <Component id="INDEFINITEINTEGRATION" linkSize="3" min="-2" pref="220" max="-2" attributes="0"/>
+                                              <Component id="DIFFERENTIATION" linkSize="3" alignment="0" min="-2" pref="220" max="-2" attributes="0"/>
+                                              <Component id="valueofx" linkSize="3" min="-2" pref="220" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <Component id="jSeparator2" linkSize="19" alignment="1" max="32767" attributes="0"/>
@@ -351,7 +349,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace pref="40" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                       <Component id="jPanel2" max="32767" attributes="0"/>
                   </Group>
@@ -613,26 +611,23 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="tempformulalist" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel4" min="-2" pref="301" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="tempformulalist" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jSeparator4" max="32767" attributes="0"/>
-                                  <Component id="historylist" max="32767" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel3" min="-2" pref="120" max="-2" attributes="0"/>
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
                                   <Component id="clearhistory" alignment="0" pref="375" max="32767" attributes="0"/>
                                   <Component id="clearhistory1" alignment="1" pref="375" max="32767" attributes="0"/>
+                                  <Component id="historylist" alignment="0" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel4" min="-2" pref="301" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -648,14 +643,14 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="clearhistory1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jSeparator4" min="-2" max="-2" attributes="0"/>
+                      <Component id="jSeparator4" min="-2" pref="11" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="historylist" min="-2" pref="217" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="clearhistory" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="37" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -704,6 +699,14 @@
               </Events>
             </Component>
             <Component class="javax.swing.JSeparator" name="jSeparator4">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
