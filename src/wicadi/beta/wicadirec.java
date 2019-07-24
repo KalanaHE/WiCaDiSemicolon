@@ -235,6 +235,5 @@ public class wicadirec {
         double ans = Double.parseDouble(a[a.length - 1]);
         return ans;
 
-
     }
 }
