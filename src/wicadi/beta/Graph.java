@@ -22,7 +22,7 @@ public class Graph extends JPanel implements ActionListener {
     int count = 0;
     //creates any variables that need to communicate between classes
     Timer tm = new Timer(1, this);
-    static GraphLayout mainGraph = new GraphLayout();
+    static GraphDraw mainGraph = new GraphDraw();
     static String parentFunction;
     static double[] trans = new double[6];
     public static final String[] parents = {"Linear", "Quadratic", "Rational", "Exponential", "Logarithmic", "Sinusodial"};

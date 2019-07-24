@@ -11,7 +11,7 @@ import java.awt.*;
  *
  * @author Kalana Hettiarachchi
  */
-public class GraphLayout {
+public class GraphDraw {
 
     private int spacing;
     private int height;
@@ -21,14 +21,14 @@ public class GraphLayout {
     private int[] yPoints = new int[1920];
     private int[] y2Points = new int[1920];
 
-    GraphLayout() {
+    GraphDraw() {
         //default dimensions
         spacing = 50;
         height = 480;
         width = 640;
     }
 
-    GraphLayout(int spaces, int high, int wide) {
+    GraphDraw(int spaces, int high, int wide) {
         spacing = spaces;
         height = high;
         width = wide;
