@@ -1337,7 +1337,7 @@ public class WiCaDiBeta extends javax.swing.JFrame {
     }//GEN-LAST:event_dotActionPerformed
 
     private void agraphActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agraphActionPerformed
-        GraphCalc gc = new GraphCalc();
+        Graph gc = new Graph();
         try{
             gc.agraphrun();
         }catch(Exception e){

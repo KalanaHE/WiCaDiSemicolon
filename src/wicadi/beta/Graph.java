@@ -17,7 +17,7 @@ import java.util.InputMismatchException;
  *
  * @author Kalana Hettiarachchi
  */
-public class GraphCalc extends JPanel implements ActionListener{
+public class Graph extends JPanel implements ActionListener{
     int count = 0;
     //creates any variables that need to communicate between classes
     Timer tm = new Timer(1, this);
@@ -87,13 +87,13 @@ public class GraphCalc extends JPanel implements ActionListener{
 
         //creates the list box dialogue to choose parent function
         JFrame frame = new JFrame();
-        GraphCalc input = new GraphCalc();
+        Graph input = new Graph();
         parentFunction = (String) JOptionPane.showInputDialog(frame,"What is the parent function?","Parent Function",JOptionPane.QUESTION_MESSAGE, null, parents,parents[0]);
         
         //figures out what parent function was selected then shows the required message box
         if(parentFunction.equals("Linear")){
             input.initalizeInput(2, "Form: y = ax + b");
-            GraphCalc t = new GraphCalc();  
+            Graph t = new Graph();  
             JFrame jf = new JFrame();
             jf.setTitle("WiCaDi Graph ( y = ax + b )");
             jf.setSize(mainGraph.getWidth(), mainGraph.getHeight());
@@ -101,7 +101,7 @@ public class GraphCalc extends JPanel implements ActionListener{
             jf.add(t);
         }else if(parentFunction.equals("Quadratic")){
             input.initalizeInput(3, "Form: y = a(x-b)^2 + c");
-            GraphCalc t = new GraphCalc();  
+            Graph t = new Graph();  
             JFrame jf = new JFrame();
             jf.setTitle("WiCaDi Graph ( a(x-b)^2 + c )");
             jf.setSize(mainGraph.getWidth(), mainGraph.getHeight());
@@ -109,7 +109,7 @@ public class GraphCalc extends JPanel implements ActionListener{
             jf.add(t);
         }else if(parentFunction.equals("Rational")){
             input.initalizeInput(6, "Form: y = (ax^2 + bx + c)/(dx^2 + ex + f)");
-            GraphCalc t = new GraphCalc();  
+            Graph t = new Graph();  
             JFrame jf = new JFrame();
             jf.setTitle("WiCaDi Graph ( y = (ax^2 + bx + c)/(dx^2 + ex + f) )");
             jf.setSize(mainGraph.getWidth(), mainGraph.getHeight());
@@ -117,7 +117,7 @@ public class GraphCalc extends JPanel implements ActionListener{
             jf.add(t);
         }else if(parentFunction.equals("Exponential")){
             input.initalizeInput(1, "Form: y = a^x");
-            GraphCalc t = new GraphCalc();  
+            Graph t = new Graph();  
             JFrame jf = new JFrame();
             jf.setTitle("WiCaDi Graph ( y = (ax^2 + bx + c)/(dx^2 + ex + f) )");
             jf.setSize(mainGraph.getWidth(), mainGraph.getHeight());
@@ -125,7 +125,7 @@ public class GraphCalc extends JPanel implements ActionListener{
             jf.add(t);
         }else if(parentFunction.equals("Logarithmic")){
             input.initalizeInput(5, "Form: y = a(logb(c(x + d)))+e");
-            GraphCalc t = new GraphCalc();  
+            Graph t = new Graph();  
             JFrame jf = new JFrame();
             jf.setTitle("WiCaDi Graph ( a(logb(c(x + d)))+e )");
             jf.setSize(mainGraph.getWidth(), mainGraph.getHeight());
@@ -133,7 +133,7 @@ public class GraphCalc extends JPanel implements ActionListener{
             jf.add(t);
         }else if(parentFunction.equals("Sinusodial")){
             input.initalizeInput(4, "Form: y = a(sin(b(x + c))) + d");
-            GraphCalc t = new GraphCalc();  
+            Graph t = new Graph();  
             JFrame jf = new JFrame();
             jf.setTitle("WiCaDi Graph ( y = a(sin(b(x + c))) + d )");
             jf.setSize(mainGraph.getWidth(), mainGraph.getHeight());
